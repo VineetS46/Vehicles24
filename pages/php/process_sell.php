@@ -37,8 +37,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // Insert into database
-    $sql = "INSERT INTO sell_vehicle (VehicleType, Brand, Model, Year, Kms, state, fuel,image,seller_id,user)
-            VALUES ('$VehicleType', '$Brand', '$Model', '$Year', '$Kms', '$state', '$fuel', '$imageName', '$seller_id', '$user')";
+    $sql = "INSERT INTO sell_vehicle (VehicleType, Brand, Model, Year, Kms, state, fuel,price,image,seller_id,user)
+            VALUES ('$VehicleType', '$Brand', '$Model', '$Year', '$Kms', '$state', '$fuel', '$price', '$imageName', '$seller_id', '$user')";
 
     if ($conn->query($sql) === TRUE) {
         echo "<script>alert('Vehicle added successfully!'); window.location.href='../sell.html';</script>";

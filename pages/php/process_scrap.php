@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $state = $_POST['state'];
     $fuel  = $_POST['fuel'];
     // $price = $_POST['price'];
-    $seller_id = $_SESSION['id']; // Assuming the user's ID is stored in the session
+    // $seller_id = $_SESSION['id']; // Assuming the user's ID is stored in the session
     $user = $_SESSION['username']; // Assuming the username is stored in the session
 
     // Handle file upload
@@ -37,8 +37,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // Insert into database
-    $sql = "INSERT INTO scrap_vehicle (VehicleType, Brand, Model, Year, Kms, state, fuel, image, seller_id, user)
-            VALUES ('$VehicleType', '$Brand', '$Model', '$Year', '$Kms', '$state', '$fuel', '$imageName', '$seller_id', '$user')";
+    $sql = "INSERT INTO scrap_vehicle (VehicleType, Brand, Model, Year, Kms, state, fuel, image,user)
+            VALUES ('$VehicleType', '$Brand', '$Model', '$Year', '$Kms', '$state', '$fuel', '$imageName','$user')";
 
     if ($conn->query($sql) === TRUE) {
         echo "<script>alert('Vehicle added successfully!'); window.location.href='../scrap.html';</script>";
