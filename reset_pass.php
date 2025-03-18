@@ -53,7 +53,7 @@ $a = (isset($_POST['pass']) ? $_POST['pass'] : '');
 $b = (isset($_POST['email']) ? $_POST['email'] : '');
 
 $host="localhost";
-$user="root";
+$user="vinit";
 $pass="";
 $db="vehicle";
 

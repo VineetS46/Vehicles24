@@ -1,8 +1,8 @@
 <?php
 // Database connection details
 $servername = "localhost";
-$username   = "root";
-$password   = "";
+$username   = "vinit";
+$password   = vinit;
 $dbname     = "vehicle";
 
 // Create connection

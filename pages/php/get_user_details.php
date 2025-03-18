@@ -1,8 +1,8 @@
 <?php
 session_start();
 $host = "localhost";
-$user = "root";
-$pass = "";
+$user = "vinit";
+$pass = vinit;
 $db = "vehicle";
 
 $conn = new mysqli($host, $user, $pass, $db);

@@ -44,8 +44,8 @@ if(isset($_POST["submit"])){
 <?php
  
  $host="localhost";
- $user="root";
- $pass="";
+ $user="vinit";
+ $pass=vinit;
  $db="vehicle";
  
  $x=mysqli_connect($host,$user,$pass,$db);
