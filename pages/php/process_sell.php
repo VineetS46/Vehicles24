@@ -23,8 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $Kms = $_POST['Kms'];
     $state = $_POST['state'];
     $fuel  = $_POST['fuel'];
-    // $price = $_POST['price'];
-    // $seller_id = $_SESSION['id']; // Assuming the user's ID is stored in the session
+     $price = $_POST['price'];
+     $seller_id = $_SESSION['id']; // Assuming the user's ID is stored in the session
     $user = $_SESSION['username']; // Assuming the username is stored in the session
 
     // Handle file upload
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // Insert into database
-    $sql = "INSERT INTO sell_vehicle (VehicleType, Brand, Model, Year, Kms, state, fuel,image,user)
+    $sql = "INSERT INTO sell_vehicle (VehicleType, Brand, Model, Year, Kms, state, fuel,image,seller_id,user)
             VALUES ('$VehicleType', '$Brand', '$Model', '$Year', '$Kms', '$state', '$fuel', '$imageName', '$seller_id', '$user')";
 
     if ($conn->query($sql) === TRUE) {
