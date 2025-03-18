@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
   
   if (mysqli_query($conn, $update)) {
       echo '<script>alert("Profile Updated Successfully")
-      location.replace("http://13.50.5.64/home/pages/profile1.php")</script>';
+      location.replace("http://13.50.5.64/Vehicles24/pages/profile1.php")</script>';
     }else {
         echo "Error updating record: " . mysqli_error($conn);
       }

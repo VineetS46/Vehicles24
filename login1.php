@@ -23,7 +23,7 @@ if(isset($_POST["submit"])){
 
       
  localStorage.setItem("user1", temp )
- location.replace("http://13.50.5.64/home/pages/buy.html")
+ location.replace("http://13.50.5.64/Vehicles24/pages/buy.html")
  </script>';
        
 
