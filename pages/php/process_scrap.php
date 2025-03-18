@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             VALUES ('$VehicleType', '$Brand', '$Model', '$Year', '$Kms', '$state', '$fuel', '$imageName','$user')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "<script>alert('Vehicle added successfully!'); window.location.href='../scrap.html';</script>";
+        echo "<script>alert('Vehicle scraped successfully! & detailed has been saved'); window.location.href='../scrap.html';</script>";
     } else {
         echo "<script>alert('Error: " . $conn->error . "'); window.location.href='../scrap.html';</script>";
     }
