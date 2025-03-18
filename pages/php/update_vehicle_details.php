@@ -2,7 +2,7 @@
 session_start();
 $host = "localhost";
 $user = "vinit";
-$pass = vinit;
+$pass = "Vinit_46";
 $db = "vehicle";
 
 $conn = new mysqli($host, $user, $pass, $db);

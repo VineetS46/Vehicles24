@@ -4,7 +4,7 @@ header('Content-Type: application/json');
 // Database connection
 $servername = "localhost";
 $username   = "vinit";
-$password   = vinit;
+$password   = "Vinit_46";
 $dbname     = "vehicle";
 
 $conn = new mysqli($servername, $username, $password, $dbname);

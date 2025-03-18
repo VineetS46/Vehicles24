@@ -2,7 +2,7 @@
 // Database connection details
 $servername = "localhost";
 $username   = "vinit";
-$password   = vinit;
+$password   = "Vinit_46";
 $dbname     = "vehicle";
 
 // Create connection
